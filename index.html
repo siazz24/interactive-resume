@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ananya Singh - Interactive Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="typewriter">Hi, I'm Ananya Singh</h1>
+    <button id="toggle-theme">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <section class="profile-section">
+      <div class="profile-image-container">
+        <img src="me.jpeg" alt="Ananya Singh" class="profile-image" />
+      </div>
+      <div class="profile-details">
+        <h1>Ananya Singh</h1>
+        <p>Frontend Developer | Creative Thinker | CSE Student | Aspiring Entrepreneur | Fashion Enthusiast</p>
+        <br>
+        <br>
+        <p> Hi, I'm Ananya Singh – a passionate Frontend Developer, creative thinker, and a Computer Science Engineering student at Quantum University. I love building interactive, user-friendly digital experiences using HTML, CSS, JavaScript, and C++. My strength lies in blending design with function—bringing ideas to life on screen.
+
+In addition to my technical journey, I have also ventured into entrepreneurship. I co-founded Dream Organisers, an event management initiative that allowed me to explore leadership, planning, and client handling in real-world scenarios. This experience helped me enhance my communication, collaboration, and problem-solving skills—traits I now carry into every project I work on.
+
+Whether I’m coding a website, designing a user interface, editing a video, or planning an event, I always aim for impact, creativity, and purpose. With a curious mind and an entrepreneurial spirit, I’m constantly pushing my boundaries to learn, build, and create.</p>
+
+
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill"><span>HTML</span>
+        <div class="bar"><div class="progress html"></div></div>
+      </div>
+      <div class="skill"><span>CSS</span>
+        <div class="bar"><div class="progress css"></div></div>
+      </div>
+      <div class="skill"><span>JavaScript</span>
+        <div class="bar"><div class="progress js"></div></div>
+      </div>
+      <div class="skill"><span>C and C++</span>
+        <div class="bar"><div class="progress c"></div></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>To-Do List Web App:</strong> Simple app to manage tasks with local storage.</li>
+        <li><strong>Image Slider:</strong> A JavaScript-powered slider for image transitions.</li>
+        <li><strong>Portfolio Website:</strong> Personal site built with HTML, CSS, JS.</li>
+        <li><strong>E-Commerce Website:</strong> Future brand site using HTML, CSS, JS.</li>
+      </ul>
+    </section>
+
+    <section id="timeline">
+      <h2>Education & Experience</h2>
+      <ul>
+        <li><strong>2024–Present:</strong> B.Tech CSE at Quantum University</li>
+        <li><strong>2021–2022:</strong> Dream Organisers - Event Management Venture</li>
+        <li><strong>2021–2023:</strong> 12th (85.5%) from MPS, Lucknow</li>
+        <li><strong>2021–2022:</strong> High School (93.8%) from SJS, Raebareli</li>
+      </ul>
+    </section>
+
+    
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form" onsubmit="sendEmail(event)">
+  <input type="text" name="name" placeholder="Your Name" required />
+<input type="email" name="email" placeholder="Your Email" required />
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
+      <!-- ✅ SUCCESS MESSAGE -->
+      <p id="response-msg" style="color: green; margin-top: 10px;"></p>
+      <a href="Resume.pdf" download class="download-btn">Download Resume</a>
+    </section>
+
+    <section class="projects">
+      <h2>Featured Project</h2>
+      <iframe src="https://siazz24.github.io/image-slider/" width="100%" height="400px" frameborder="0"></iframe>
+    </section>
+
+    <details>
+      <summary>Soft & Hard Skills</summary>
+      <ul>
+        <li>Leadership </li>
+        <li>Problem-Solving Ability</li>
+        <li>Attention to Detail.</li>
+        <li>Outfit designing-designed outfits for my college fashion events</li>
+        <li>Graphic Designing</li>
+        <li>Work Ethic – Committed, reliable, and professional.</li>
+        <li>Time Management </li>
+        <li>Video Editing</li>
+        <li>Time Management </li>
+
+      </ul>
+    </details>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/ananya-singh-a229b232a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/siazz24" target="_blank">💻 GitHub</a>
+      <a href="mailto:ananys2410@gmail.com" target="_blank">📧 Email</a>
+
+    </div>
+    <p>CONTACT-8081975961</p>
+    <br>
+    <p>&copy; 2025 Ananya Singh. All rights reserved.</p>
+  </footer>
+   <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+
+  </body>
+</html>
